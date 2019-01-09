@@ -1,0 +1,28 @@
+int main(void)
+{
+	printf("전위방식과 후위방식의 차이\n");
+
+	int num1=10, num2=10;
+	int a, b;
+
+	a = ++num1;
+	/*
+	num1=num1+1;
+	a=num1;
+	*/
+	printf("%d %d\n", a, num1);
+	//출력값: 11 11
+	//먼저 num1+1을 한 다음(num1의 값이 11이 됨) a에 num1을 대입한다.
+
+
+	b = num2++;
+	/*
+	b=num2;
+	num2=num2+1;
+	*/
+	printf("%d %d\n", b, num2);
+	//출력값: 10 11
+	//먼저 b에 num2를 대입한 다음 num2+1을 수행한다.
+
+	return 0;
+}
